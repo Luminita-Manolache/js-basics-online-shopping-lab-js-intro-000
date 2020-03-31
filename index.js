@@ -16,7 +16,7 @@ function addToCart(item) {
 
  var newItem = {[item]: Math.floor( Math.random(1, 101) * 100 ) };
 for(var i = 0; i < cart.length; i++) {
-     newItem += cart[i];
+     newItem = cart[i];
 }
   return `${newItem} has been added to your cart.`;
 }
