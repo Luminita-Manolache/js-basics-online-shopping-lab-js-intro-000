@@ -20,7 +20,7 @@ function addToCart(item) {
       structureCart[key] = newItem[key];
   });
 
-   console.log(JSON.stringify(structureCart);
+   return structureCart;
   //return `${item} has been added to your cart.`;
 }
 
