@@ -16,7 +16,7 @@ function addToCart(item) {
 
   var structureCart = {};
 
-  Object.keys(item).forEach(function(itemName) {
+  Object.keys(itemName).forEach(function(itemName) {
       structureCart[itemName] = newItem[itemName];
   });
 
