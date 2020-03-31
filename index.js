@@ -13,7 +13,7 @@ function addToCart(item) {
  // write your code here
  item = {};
  var newItem = {[item]: Math.floor( Math.random(1, 101) * 100 ) };
- cart.push(newItem);
+ cart.push(item);
 
   return `${item} has been added to your cart.`;
 }
