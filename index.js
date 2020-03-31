@@ -15,7 +15,7 @@ function addToCart(item) {
  var newItem = {[item]: Math.floor( Math.random(1, 101) * 100 ) };
  cart.push(newItem);
 
-  Object.keys(newItem).forEach(function(key) {
+  Object.keys(item).forEach(function(key) {
       item[key] = newItem[key];
   });
 
