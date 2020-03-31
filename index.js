@@ -12,15 +12,15 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var newItem = {[item]: Math.floor( Math.random(1, 101) * 100 ) };
-  cart.push(newItem);
+  //cart.push(newItem);
 
   var structureCart = {};
 
-  Object.keys(newItem).sort().forEach(function(key) {
-      structureCart[key] = newItem[key];
+  Object.keys(item).sort().forEach(function(key) {
+      structureCart[key] = item[key];
   });
 
-   return structureCart;
+   cart.push(structureCart);
   //return `${item} has been added to your cart.`;
 }
 
