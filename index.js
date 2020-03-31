@@ -15,11 +15,11 @@ function addToCart(item) {
   cart.push(newItem);
 
   var stuctureCart = {};
-  
+
   Object.keys(newItem).sort().forEach(function(key) {
       structureCart[key] = newItem[key];
   });
-  
+
    return structureCart;
   //return `${item} has been added to your cart.`;
 }
