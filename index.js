@@ -18,7 +18,7 @@ function addToCart(item) {
 for(var i = 0; i < cart.length; i++) {
      newItem += cart[i];
 }
-  return `${addCart} has been added to your cart.`;
+  return `${newItem} has been added to your cart.`;
 }
 
 function viewCart() {
