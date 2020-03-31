@@ -19,7 +19,7 @@ function addToCart(item) {
   Object.keys(newItem).sort().forEach(function(key) {
       sortCart[key] = newItem[key];
   });
-      
+
   return `${sortCart} has been added to your cart.`;
 }
 
