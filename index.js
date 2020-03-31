@@ -16,8 +16,8 @@ function addToCart(item) {
  cart.push(newItem);
 
  var sortCart = {};
-  Object.keys(newItem).sort().forEach(function(key) {
-      sortCart[key] = newItem[key];
+  Object.keys(item).sort().forEach(function(key) {
+      sortCart[key] = item[key];
   });
 
   return `${sortCart} has been added to your cart.`;
